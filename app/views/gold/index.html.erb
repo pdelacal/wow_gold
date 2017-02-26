@@ -1,0 +1,53 @@
+<div class="title">
+  <h1 id="head">WoW Token Info</h1>
+  <h2>WoW Token prices from the auction houses of World of Warcraft</p>
+  </div>
+<div class="title">
+<div class="left">
+
+<h1 id="head">Signup!</h1>
+
+<%= form_for :user, url: '/users' do |f| %>
+  <div class='row'>
+    <div class='col-md-6'>
+      <p>Name</p>
+    </div>
+    <div class='col-md-6'>
+      <%= f.text_field :name %>
+    </div>
+    <div class='col-md-6'>
+      <p>Email</p>
+    </div>
+    <div class='col-md-6'>
+      <%= f.text_field :email %>
+    </div>
+    <div class='col-md-6'>
+      <p>Password</p>
+    </div>
+    <div class='col-md-6'>
+      <%= f.text_field :password %>
+    </div>
+  </div>
+  <br>
+  Email: <%= f.text_field :email %>
+  <br>
+  Password: <%= f.password_field :password %>
+  <br>
+  Confirm: <%= f.password_field :password_confirmation %>
+  <br>
+  <br>
+  <div class="ctr">
+    <%= f.submit "Submit", id:'butt' %>
+
+  </div>
+
+<% end %>
+</div>
+</div>
+
+
+<style type="text/css">
+  html {
+    background: url(<%= randomized_background_image %>) no-repeat center center fixed;
+  }
+</style>
